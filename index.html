@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="forma.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="./Resources/images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">      
+</head>
+<body>
+    
+    <header>
+        <img src="./Resources/images/Logo.png">
+    </header>
+    <main>
+        <section>
+            <textarea type="text" style="text-transform:lowercase" style="text" class="input-text" cols="40" rows="6" placeholder ="Ingrese su texto aquí" required oninput="validarTextarea(this)" title="Solo deben ser ingresadas letras minusculas y sin caracteres especiales"></textarea>
+            <h6>&#9888 Solo letras minúsculas y sin acento</h6>
+                <div>
+                    <button  type="button" class="encriptar" onclick="btnencriptar()">Encriptar</button>
+                    <button type="button" class="desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+                </div>
+        </section>
+        <section>
+            <div>
+                <textarea id="resultado" type="text" cols="18" rows="8"class="input-text-area" disabled></textarea>
+                <button id="copiar" onclick="btncopiar()">Copiar</button>
+                <img class="fondo_resultado" id="munheco" src="./Resources/images/Muñeco.png">
+                <div class="textos">
+                    <p id="texto">Ningún mensaje fue encontrado</p>
+                    <br>
+                    <br>
+                    <p id="txt">Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p class="footer">
+            &copy KEVIN ARIAS - ORACLE NEXT EDUCATION 2023
+        </p>    
+    </footer> 
+</body>
+    <script src="script.js"></script>
+    
+</html>
