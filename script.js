@@ -79,7 +79,7 @@ function validarTextarea(elem) {
         if((validarEntrada(txt))==false){
           alert("No se permiten caracteres especiales");
           location.reload();
-          document.getElementById("text-area").value = "";
+          
           }
     } else {
       elem.classList.remove('invalido');
