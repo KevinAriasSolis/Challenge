@@ -78,6 +78,7 @@ function validarTextarea(elem) {
       elem.classList.add('invalido');
         if((validarEntrada(txt))==false){
           alert("No se permiten caracteres especiales");
+          location.reload();
           document.getElementById("text-area").value = "";
           }
     } else {
